@@ -26,10 +26,17 @@ export default {
       data: videoInfo
     })
   },
-
+  //删除小节
   removeVideoById(id) {
     return request({
       url: `${api_name}/${id}`,
+      method: 'delete'
+    })
+  },
+  //删除阿里云视频
+  deleteAliVideo(id) {
+    return request({
+      url: `/vod/video/removeAliVideo/${id}`,
       method: 'delete'
     })
   }

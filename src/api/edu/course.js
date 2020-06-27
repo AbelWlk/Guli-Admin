@@ -45,6 +45,19 @@ export default {
       url: `${api_name}/publish/${courseId}`,
       method: 'post',
     })
+  },
+  //课程最终发布
+  getCourseList(){
+    return request({
+      url: `${api_name}/getCourseList`,
+      method: 'get',
+    })
+  },
+  removeById(courseId) {
+    return request({
+      url: `${api_name}/${courseId}`,
+      method: 'delete'
+    })
   }
 
 }
