@@ -177,6 +177,7 @@
       //=================================小节操作=========================
       openVideoDialog(chapterId) {
         this.video = {}
+        this.fileList=[]
         this.dialogVideoFormVisible = true
         //设置章节id
         this.video.chapterId = chapterId
